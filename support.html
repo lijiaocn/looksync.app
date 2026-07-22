@@ -3,290 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LookSync - Technical Support</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-        }
-
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 60px 40px;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-        .header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-
-        .content {
-            padding: 40px;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            color: #667eea;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
-        }
-
-        .section h3 {
-            color: #764ba2;
-            font-size: 1.3em;
-            margin-top: 25px;
-            margin-bottom: 15px;
-        }
-
-        .section p {
-            margin-bottom: 15px;
-            color: #555;
-            line-height: 1.8;
-        }
-
-        .section ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-
-        .section li {
-            margin-bottom: 10px;
-            color: #555;
-            line-height: 1.8;
-        }
-
-        .contact-info {
-            background: #f8f9fa;
-            padding: 25px;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-        }
-
-        .contact-info p {
-            margin-bottom: 10px;
-        }
-
-        .contact-info a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .faq-item {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            border-left: 4px solid #764ba2;
-        }
-
-        .faq-item h4 {
-            color: #764ba2;
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-
-        .faq-item p {
-            color: #666;
-            margin: 0;
-        }
-
-        .app-info {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            background: #f8f9fa;
-            padding: 25px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-        }
-
-        .app-icon {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 2em;
-            font-weight: bold;
-            flex-shrink: 0;
-        }
-
-        .app-details {
-            flex: 1;
-        }
-
-        .app-details h3 {
-            margin-top: 0;
-            color: #333;
-        }
-
-        .footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-
-        .footer p {
-            margin: 5px 0;
-            opacity: 0.8;
-        }
-
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2em;
-            }
-
-            .header p {
-                font-size: 1em;
-            }
-
-            .content {
-                padding: 25px;
-            }
-
-            .app-info {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-
-        .badge {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            margin-left: 10px;
-        }
-    </style>
+    <title>LookSync — Support</title>
+    <meta name="description" content="Get help with LookSync. Contact support and find privacy information.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>LookSync</h1>
-            <p>Technical Support</p>
-        </div>
+    <div class="atmosphere" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
 
-        <div class="content">
-            <div class="section">
-                <h2>📧 Contact Us</h2>
-                <div class="contact-info">
-                    <p><strong>Email Support:</strong> <a href="mailto:lijiaocn@gmail.com">lijiaocn@gmail.com</a></p>
-                </div>
+    <div class="page">
+        <nav class="nav">
+            <a href="index.html" class="nav-brand">LookSync</a>
+            <div class="nav-links">
+                <a href="support.html" aria-current="page">Support</a>
+                <a href="privacy.html">Privacy</a>
             </div>
+        </nav>
 
-            <div class="section">
-                <h2>🔒 Privacy Policy</h2>
-                
-                <p><strong>Last Updated:</strong> January 27, 2026</p>
-                
-                <h3>1. Introduction</h3>
-                <p>LookSync ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our iOS application LookSync (the "App"). Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access or use the App.</p>
-                
-                <h3>2. Information We Collect</h3>
-                <p>We may collect information that you provide directly to us, including:</p>
-                <ul>
-                    <li><strong>Account Information:</strong> When you create an account, we may collect your email address and other information you choose to provide.</li>
-                    <li><strong>Device Information:</strong> We may collect information about your device, including device model, operating system version, and unique device identifiers.</li>
-                    <li><strong>Usage Information:</strong> We may collect information about how you use the App, including features you access and actions you take.</li>
-                    <li><strong>Photos and Media:</strong> The App may access your photos, videos, and other media files stored on your device to provide synchronization services. This data is processed locally on your device only.</li>
-                </ul>
-                
-                <h3>3. How We Use Your Information</h3>
-                <p>We use the information we collect to:</p>
-                <ul>
-                    <li>Provide, maintain, and improve the App and its features</li>
-                    <li>Process and complete transactions</li>
-                    <li>Send you technical notices, updates, and support messages</li>
-                    <li>Respond to your comments, questions, and requests</li>
-                    <li>Monitor and analyze trends, usage, and activities in connection with the App</li>
-                    <li>Detect, prevent, and address technical issues and security threats</li>
-                </ul>
-                
-                <h3>4. Data Storage and Security</h3>
-                <p>We implement appropriate technical and organizational security measures to protect your personal information. All your data is stored locally on your iOS device only. We do not transmit, upload, or store your data on any external servers or cloud storage.</p>
-                <p>While we strive to protect your personal information, no method of electronic storage is 100% secure. We cannot guarantee absolute security of your data.</p>
-                
-                <h3>5. Data Sharing and Disclosure</h3>
-                <p>We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:</p>
-                <ul>
-                    <li><strong>Service Providers:</strong> We may share information with third-party service providers who perform services on our behalf, such as analytics services and customer support services. These providers are contractually obligated to protect your information.</li>
-                    <li><strong>Legal Requirements:</strong> We may disclose your information if required by law or in response to valid requests by public authorities.</li>
-                    <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.</li>
-                </ul>
-                
-                <h3>6. Your Rights and Choices</h3>
-                <p>You have certain rights regarding your personal information:</p>
-                <ul>
-                    <li><strong>Access:</strong> You can access and review your personal information through the App settings</li>
-                    <li><strong>Deletion:</strong> You can delete your account and associated data at any time through the App settings</li>
-                    <li><strong>Opt-out:</strong> You can opt-out of certain data collection by adjusting your device settings or App preferences</li>
-                    <li><strong>Data Portability:</strong> You can export your data from the App</li>
-                </ul>
-                
-                <h3>7. Children's Privacy</h3>
-                <p>The App is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
-                
-                <h3>8. International Data Transfers</h3>
-                <p>Since all your data is stored locally on your device and we do not transfer your personal data to external servers, this section does not apply to your use of the App.</p>
-                
-                <h3>9. Changes to This Privacy Policy</h3>
-                <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.</p>
-                
-                <h3>10. Contact Us</h3>
-                <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us at:</p>
-                <div class="contact-info">
+        <main class="doc-main">
+            <header class="doc-header">
+                <p class="doc-label">Help</p>
+                <h1>Technical Support</h1>
+                <p>Questions about LookSync? Reach out anytime.</p>
+            </header>
+
+            <section class="doc-section">
+                <h2>Contact Us</h2>
+                <div class="panel">
                     <p><strong>Email:</strong> <a href="mailto:lijiaocn@gmail.com">lijiaocn@gmail.com</a></p>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="footer">
-            <p>&copy; 2026 LookSync. All rights reserved.</p>
-            <p>Thank you for using LookSync!</p>
-        </div>
+            <section class="doc-section">
+                <h2>Privacy</h2>
+                <p>Your photos and media are processed locally on your device. We do not upload them to external servers.</p>
+                <div class="panel">
+                    <p>Read the full policy: <a href="privacy.html">Privacy Policy</a></p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 LookSync</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
